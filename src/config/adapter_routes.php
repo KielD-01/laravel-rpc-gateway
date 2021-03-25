@@ -19,5 +19,6 @@
 use KielD01\Adapters\RPCAdapter;
 
 return [
+    /** @uses RPCAdapter::testMethod() */
     'rpc.gateway::test_method.get' => [RPCAdapter::class, 'testMethod', true]
 ];
