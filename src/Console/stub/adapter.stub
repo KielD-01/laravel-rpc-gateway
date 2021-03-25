@@ -11,7 +11,7 @@ use KielD01\Adapters\RPCAdapter;
 class {class} extends RPCAdapter
 {
 
-    public function testMethod(): array
+    public function testMethod(): void
     {
         // @ToDo : Replace generated stub with actual functionality
         $data = [];
