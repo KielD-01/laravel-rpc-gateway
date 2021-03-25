@@ -102,15 +102,4 @@ abstract class RPCAdapter
     {
         return $this->request;
     }
-
-    /**
-     * Test method for route
-     */
-    public function testMethod(): void
-    {
-        $this->setResponse([
-            'rpc' => true,
-            'is_adapted' => true
-        ]);
-    }
 }

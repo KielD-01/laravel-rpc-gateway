@@ -16,9 +16,9 @@
  * '{actionOrUrl.[requestMethod]}' => [Adapter::class, 'adapterMethod', isRunnable/isDiscoverable/isActive (true, false)]
  */
 
-use KielD01\Adapters\RPCAdapter;
+use KielD01\Adapters\TestRpcAdapter;
 
 return [
-    /** @uses RPCAdapter::testMethod() */
-    'rpc.gateway::test_method.get' => [RPCAdapter::class, 'testMethod', true]
+    /** @uses TestRpcAdapter::testMethod() */
+    'rpc.gateway::test_method.get' => [TestRpcAdapter::class, 'testMethod', true]
 ];
