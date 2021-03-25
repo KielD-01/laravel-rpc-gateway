@@ -1,0 +1,24 @@
+{
+  "name": "kield-01/laravel-rpc-gateway",
+  "type": "library",
+  "description": "",
+  "authors": [
+    {
+      "name": "Roman Kozin",
+      "email": "romanko95.rk@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.4",
+    "graze/guzzle-jsonrpc": "3.2.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "KielD01": "./src/"
+    }
+  },
+  "require-dev": {
+    "laravel/framework": "^6.18",
+    "phpunit/phpunit": "^7.5"
+  }
+}
