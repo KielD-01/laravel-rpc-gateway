@@ -13,5 +13,6 @@ Route::prefix('rpc-gateway')
                         'is_adapted' => false
                     ]);
             })
+            ->middleware('web')
             ->name('rpc.gateway::test_method');
     });
