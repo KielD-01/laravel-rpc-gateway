@@ -1,0 +1,23 @@
+<?php
+
+namespace App\Packages\TechGenerationAdapters\Adapters;
+
+/**
+ * Class {class}
+ * @package App\Packages\TechGenerationAdapters\Adapters
+ */
+class {class} extends RPCAdapter
+{
+
+    public function testMethod(): array
+    {
+        // @ToDo : Replace generated stub with actual functionality
+        $data = [];
+
+        return [
+            $data,
+            200
+        ];
+    }
+
+}
