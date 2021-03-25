@@ -1,6 +1,6 @@
 <?php
 
-namespace KielD01\Responses;
+namespace KielD01\Adapters\Responses;
 
 /**
  * Class AdapterResponse

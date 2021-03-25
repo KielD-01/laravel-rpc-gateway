@@ -3,7 +3,7 @@
 namespace KielD01\Adapters;
 
 use Illuminate\Http\Request;
-use KielD01\Responses\AdapterResponse;
+use KielD01\Adapters\Responses\AdapterResponse;
 
 /**
  * Class RPCAdapter

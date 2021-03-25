@@ -1,6 +1,6 @@
 <?php
 
-namespace KielD01\Commands;
+namespace KielD01\Console\Commands;
 
 /**
  * Class MakeAdapterCommand
