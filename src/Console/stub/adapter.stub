@@ -1,10 +1,12 @@
 <?php
 
-namespace App\Packages\TechGenerationAdapters\Adapters;
+namespace App\Adapters;
+
+use KielD01\Adapters\RPCAdapter;
 
 /**
  * Class {class}
- * @package App\Packages\TechGenerationAdapters\Adapters
+ * @package App\Adapters
  */
 class {class} extends RPCAdapter
 {
@@ -14,10 +16,7 @@ class {class} extends RPCAdapter
         // @ToDo : Replace generated stub with actual functionality
         $data = [];
 
-        return [
-            $data,
-            200
-        ];
+        $this->setResponse($data, 200);
     }
 
 }
