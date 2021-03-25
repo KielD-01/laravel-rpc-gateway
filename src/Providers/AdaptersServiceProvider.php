@@ -46,11 +46,12 @@ class AdaptersServiceProvider extends ServiceProvider
         $middlewareGroups = collect(is_array($groups) ? $groups : [$groups])
             ->filter();
 
-        if ($middlewareGroups->count()) {
-            $middlewareGroups->each(static function ($group) use ($kernel) {
+        $kernelGroups = $kernel->getMiddlewareGroups();
+
+        $middlewareGroups->each(static function ($group) use ($kernel, $kernelGroups) {
+            !in_array($group, $kernelGroups, true) ?:
                 $kernel->prependMiddlewareToGroup($group, AdapterMiddleware::class);
-            });
-        }
+        });
     }
 
     /**
