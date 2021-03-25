@@ -43,7 +43,8 @@ class AdaptersServiceProvider extends ServiceProvider
             config('adapters.default_middleware_groups', [])
         );
 
-        $middlewareGroups = collect(is_array($groups) ? $groups : [$groups]);
+        $middlewareGroups = collect(is_array($groups) ? $groups : [$groups])
+            ->filter();
 
         if ($middlewareGroups->count()) {
             $middlewareGroups->each(static function ($group) use ($kernel) {
