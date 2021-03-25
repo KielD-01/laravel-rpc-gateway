@@ -35,10 +35,10 @@ class MakeAdapterCommand extends AdapterCommand
      */
     private function generateStub(string $className): bool
     {
-        $filePath = __DIR__ . DIRECTORY_SEPARATOR . '..' .
-            DIRECTORY_SEPARATOR . '..' .
-            DIRECTORY_SEPARATOR . 'Adapters'
-            . DIRECTORY_SEPARATOR . \sprintf('%s.php', $className);
+        $filePath = app_path(DIRECTORY_SEPARATOR . 'Adapters' .
+            DIRECTORY_SEPARATOR .
+            \sprintf('%s.php', $className)
+        );
 
         if (is_file($filePath)) {
             return false;
