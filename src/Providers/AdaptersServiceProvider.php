@@ -49,8 +49,9 @@ class AdaptersServiceProvider extends ServiceProvider
         $kernelGroups = $kernel->getMiddlewareGroups();
 
         $middlewareGroups->each(static function ($group) use ($kernel, $kernelGroups) {
-            !in_array($group, $kernelGroups, true) ?:
+            if (array_key_exists($group, $kernelGroups)) {
                 $kernel->prependMiddlewareToGroup($group, AdapterMiddleware::class);
+            }
         });
     }
 
