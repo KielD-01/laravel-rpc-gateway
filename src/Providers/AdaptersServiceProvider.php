@@ -2,7 +2,7 @@
 
 namespace KielD01\Providers;
 
-use Illuminate\Foundation\Http\Kernel;
+use App\Http\Kernel;
 use Illuminate\Support\ServiceProvider;
 use KielD01\Console\Commands\MakeAdapterCommand;
 use KielD01\Middlewares\AdapterMiddleware;
